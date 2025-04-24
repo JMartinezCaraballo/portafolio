@@ -1,0 +1,242 @@
+* {
+    font-family: 'Cinzel Decorative', serif;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    color: white;
+  }
+  
+  head {
+    display: none;
+  }
+  
+  /* Estilos Logo del navegador */
+  .navContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: rgba(128, 128, 128, 0.562) 1px solid;
+  }
+  
+  /* Imagen de logo */
+  .logoContainer img {
+    width: 80px;
+    object-fit: cover;
+    border-radius: 50%; /* Hace el logo completamente circular */
+    border: 2px solid white; /* Borde blanco para destacarlo */
+  }
+  
+  .logoContainer {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  
+  .logoContainer .logoContainer__logo {
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 36px;
+    color: #fff;
+    transition: color 1s ease;
+    line-height: 34px;
+    padding-top: 8px;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  
+  
+  
+  /* Estilos items de navegador */
+  .itemsContainer {
+    margin-left: auto;
+  }
+  
+  .itemsContainer ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .itemsContainer ul li {
+    margin: 0 20px;
+    cursor: pointer;
+    font-size: 10px;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    --x-0: 93%; --y-0: 93%; --c-0: hsla(212, 0%, 0%, 1);
+    --x-1: 26%; --y-1: 9%;  --c-1: hsla(212, 0%, 0%, 1);
+    --x-2: 15%; --y-2: 79%; --c-2: hsla(257.14, 91%, 27%, 0.35);
+    --x-3: 40%; --y-3: 104%;--c-3: hsla(212.47, 100%, 50%, 0.5);
+    --x-4: 0%;  --y-4: 60%; --c-4: hsla(224.44, 72%, 36%, 1);
+    --x-5: 92%; --y-5: 37%; --c-5: hsla(248.31, 52%, 24%, 1);
+    --x-6: 101%;--y-6: 16%; --c-6: hsla(212.47, 100%, 50%, 0.19);
+    --x-7: 90%; --y-7: 13%; --c-7: hsla(227.65, 98%, 53%, 1);
+    --x-8: 104%;--y-8: 56%; --c-8: hsla(166.53, 71%, 60%, 0.32);
+    --x-9: 97%; --y-9: 19%; --c-9: hsla(219.21, 83%, 23%, 0.18);
+  
+    --s-start-0: 0%;  --s-end-0: 40%;
+    --s-start-1: 0%;  --s-end-1: 45%;
+    --s-start-2: 0%;  --s-end-2: 30%;
+    --s-start-3: 0%;  --s-end-3: 50%;
+    --s-start-4: 0%;  --s-end-4: 35%;
+    --s-start-5: 0%;  --s-end-5: 50%;
+    --s-start-6: 0%;  --s-end-6: 25%;
+    --s-start-7: 0%;  --s-end-7: 60%;
+    --s-start-8: 0%;  --s-end-8: 40%;
+    --s-start-9: 0%;  --s-end-9: 30%;
+  
+    background-color: hsla(305, 0%, 0%, 1);
+    background-image:
+      radial-gradient(circle at var(--x-0) var(--y-0), var(--c-0) var(--s-start-0), transparent var(--s-end-0)),
+      radial-gradient(circle at var(--x-1) var(--y-1), var(--c-1) var(--s-start-1), transparent var(--s-end-1)),
+      radial-gradient(circle at var(--x-2) var(--y-2), var(--c-2) var(--s-start-2), transparent var(--s-end-2)),
+      radial-gradient(circle at var(--x-3) var(--y-3), var(--c-3) var(--s-start-3), transparent var(--s-end-3)),
+      radial-gradient(circle at var(--x-4) var(--y-4), var(--c-4) var(--s-start-4), transparent var(--s-end-4)),
+      radial-gradient(circle at var(--x-5) var(--y-5), var(--c-5) var(--s-start-5), transparent var(--s-end-5)),
+      radial-gradient(circle at var(--x-6) var(--y-6), var(--c-6) var(--s-start-6), transparent var(--s-end-6)),
+      radial-gradient(circle at var(--x-7) var(--y-7), var(--c-7) var(--s-start-7), transparent var(--s-end-7)),
+      radial-gradient(circle at var(--x-8) var(--y-8), var(--c-8) var(--s-start-8), transparent var(--s-end-8)),
+      radial-gradient(circle at var(--x-9) var(--y-9), var(--c-9) var(--s-start-9), transparent var(--s-end-9));
+  
+    background-blend-mode: normal, normal, normal, normal, normal, normal, normal, normal, normal, normal;
+    background-size: 200% 200%;
+    animation: hero-gradient-animation 10s linear infinite alternate;
+  }
+  
+  @keyframes hero-gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  .seccion-1 {
+    border: solid 3px;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  /* Carrusel */
+.carrusel {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+  }
+  
+  .slider {
+    height: 200px;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slide-track {
+    display: flex;
+    width: calc(260px * 10); /* Ajusta si agregas más slides */
+    animation: scroll 20s linear infinite;
+  }
+  
+  .slide {
+    width: 250px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .slide:hover img {
+    transform: scale(1.05);
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+  /*  Estilo moderno con relieve y sin bordes para el navegador */
+  nav {
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 16px;
+    padding: 12px 24px;
+    margin: 12px 20px;
+    box-shadow:
+      0 4px 10px rgba(0, 0, 0, 0.4),
+      inset 0 1px 1px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  nav:hover {
+    box-shadow:
+      0 6px 12px rgba(0, 0, 0, 0.5),
+      inset 0 2px 2px rgba(255, 255, 255, 0.08);
+  }
+  
+  .footer {
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    padding: 30px 20px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.5);
+    margin-top: 50px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .social-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.15);
+    box-shadow: 0 6px 10px rgba(255,255,255,0.3);
+  }
+  
